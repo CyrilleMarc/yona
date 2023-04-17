@@ -1,8 +1,12 @@
+:root {
+  --color1: #ffeddb;
+  --color2: #edcdbb;
+}
+
 * {
   margin: 0;
   padding: 0;
-  background-color: #000;
-  backgroud-color: #ffeddb;
+  backgroud-color: var(--color1);
 }
 
 .header {
@@ -11,7 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  backgroud-color: #ffeddb;
+  backgroud-color: var(--color1);
 }
 
 .header img {
@@ -22,13 +26,67 @@
 .presentation {
   width: 100%;
   height: auto;
-  background-color: #ffeddb;
+  background-color: var(--color1);
 }
 .presentation p {
-  background-color: #ffeddb;
+  background-color: var(--color1);
   color: #8d7448;
   font-size: 30px;
   margin: 0px 10px;
   font-family: "Abril Fatface", cursive;
   text-align: justify;
+}
+
+.sarah {
+  background-color: var(--color2);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+.sarah img {
+  width: 40%;
+  height: auto;
+  margin-top: 50px;
+  border-radius: 5%;
+}
+
+.sarah p {
+  background-color: var(--color2);
+  width: 30%;
+  font-size: 40px;
+  font-family: "Abril Fatface", cursive;
+}
+
+.maelys {
+  background-color: var(--color2);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+.maelys img {
+  width: 40%;
+  height: auto;
+  margin-top: 50px;
+  border-radius: 5%;
+}
+
+.maelys p {
+  background-color: var(--color2);
+  width: 30%;
+  font-size: 40px;
+  font-family: "Abril Fatface", cursive;
+}
+
+// MEDIA QUERY
+
+@media screen and (max-width: 768px) {
+  .header img {
+    width: 20%;
+  }
+
+  .presentation {
+    font-size: 15px;
+  }
 }
